@@ -26,10 +26,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/bookresponse"
-                  }
+                  "$ref": "#/components/schemas/listbookresponse"
                 }
               }
             }
@@ -184,6 +181,12 @@
   },
   "components": {
     "schemas": {
+      "listbookresponse": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/bookresponse"
+        }
+      },
       "bookresponse": {
         "type": "object",
         "properties": {
