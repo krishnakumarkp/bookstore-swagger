@@ -16,7 +16,7 @@
     "/books": {
       "get": {
         "summary": "List of books",
-        "operationId": "listBooks",
+        "operationId": "listBook",
         "tags": [
           "books"
         ],
@@ -39,6 +39,9 @@
       "post": {
         "summary": "Creates a new book",
         "operationId": "addBook",
+        "tags": [
+          "books"
+        ],
         "requestBody": {
           "description": "Book to add to the store",
           "required": true,
@@ -71,6 +74,9 @@
       "get": {
         "summary": "get book by id",
         "operationId": "findBook",
+        "tags": [
+          "books"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -102,6 +108,9 @@
       "put": {
         "description": "Updates a book",
         "operationId": "updateBook",
+        "tags": [
+          "books"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -147,6 +156,9 @@
       "delete": {
         "description": "Updates a book",
         "operationId": "deleteBook",
+        "tags": [
+          "books"
+        ],
         "parameters": [
           {
             "name": "id",
